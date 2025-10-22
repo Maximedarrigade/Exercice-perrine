@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Header */
+
+.header h1{
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+.header img{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover; 
+}
+
+
+
+.header{
+  position: relative;
+  padding: 20px;
+  text-align: center;background-color: #333;
+}
+
+
+.bouttons{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.bouttons button{
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bouttons button:hover{
+  transform: scale(1.2);
+}
+
+.header label{
+  display: block;
+  margin-top: 20px; 
+}
+
+.header input[type="text"]{
+  width: 60%;               
+  max-width: 400px;        
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 25px;      
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+
+.header input[type="text"]:focus{
+  border-color: #007bff;    
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+
+/* Hero Section */
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 2rem;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.hero-2 img{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero-contenant h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.hero-contenant p{
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.hero-3{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+
+/* Carrousel */
+
+.carrousel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; 
+  margin: 40px auto;
+  width: fit-content;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.carrousel .images{
+  display: flex;
+  gap: 20px;
+}
+
+.carrousel img{
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.carrousel img:hover{
+  transform: scale(1.25);
+}
+
+.carrousel button{
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 24px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.carrousel button:hover{
+  background-color: #555;
+}
+
+/* Les livres les mieux notés */
+
+.mieux-notés{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px auto;
+    width: fit-content;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.mieux-notés .images{
+    display: flex;
+    gap: 20px;
+}
+
+.mieux-notés img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; 
+}
+
+.mieux-notés img:hover{
+    transform: scale(1.15);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+h2{
+    text-align: center;
+}
+
+/* Requetes du prochain livre */
+
+.demande{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.choix-livres{
+    display: flex;
+    gap: 30px;
+    justify-content: center; 
+}
+
+.livre{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+
+.livre img{
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.livre label{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.livre input[type="radio"]{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.demande button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.demande button:hover{
+    background-color: #0056b3;
+}
+
+/* Footer */
+
+footer{
+  position: relative; 
+  height: 150px;      
+  background-color: #333; 
+  color: whitesmoke;
+}
+
+footer img{
+  position: absolute;
+  bottom: 10px;          
+  left: 50%;            
+  transform: translateX(-50%); 
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+p{
+    text-align: right;
+}
+
+a{
+  color: whitesmoke;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+a:hover{
+  color: lightgray;      
+  transform: scale(1.1); 
+}
+
+.contact-footer{
+  text-align: center;
+}
+
+
+
+
+
+
+
